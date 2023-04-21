@@ -19,6 +19,11 @@ fetch(video_http + new URLSearchParams({
     })
     .catch(err => console.log(err));
 
+
+
+
+
+
 const getChannelIcon = (video_data) => {
     fetch(channel_http + new URLSearchParams({
             key: api_key,
@@ -31,6 +36,11 @@ const getChannelIcon = (video_data) => {
             makeVideoCard(video_data);
         })
 }
+
+
+
+
+
 
 const makeVideoCard = (data) => {
     videoCardContainer.innerHTML += `
@@ -46,6 +56,13 @@ const makeVideoCard = (data) => {
     </div>
     `;
 }
+
+
+
+
+
+
+
 
 // search bar
 
